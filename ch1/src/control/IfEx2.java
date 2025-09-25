@@ -19,16 +19,32 @@ public class IfEx2 {
          * }
          */
         char grade = 'F';
-        if (score >= 90) {
-            grade = 'A';
-        } else if (score >= 80) {
-            grade = 'B';
+        // if (score >= 90) {
+        // grade = 'A';
+        // } else if (score >= 80) {
+        // grade = 'B';
 
-        } else if (score >= 70) {
-            grade = 'C';
-        } else {
-            grade = 'D';
+        // } else if (score >= 70) {
+        // grade = 'C';
+        // } else {
+        // grade = 'D';
+        // }
+
+        switch (score / 10) {
+            case 10:
+            case 9:
+                grade = 'A';
+                break;
+            case 8:
+                grade = 'B';
+            case 7:
+                grade = 'C';
+                break;
+            default:
+                grade = 'D';
+                break;
         }
+
         System.out.printf("%c등급입니다.", grade);
     }
 }

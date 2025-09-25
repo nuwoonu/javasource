@@ -31,8 +31,8 @@ public class SwitchEx1 {
             default:
                 System.out.println("월을 정확히 입력해주세요.");
                 break;
-        }
 
+        }
         /*
          * if (month == 12 || month == 1 || month == 2) {
          * System.out.println("겨울입니다.");
